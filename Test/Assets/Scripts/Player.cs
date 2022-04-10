@@ -6,38 +6,66 @@ using UnityEngine;
 
 public class Player : MonoBehaviour
 {
+    [SerializeField] private int upForcePlayer;
+    [SerializeField] private Transform GroundCheckTransform;
+    [SerializeField] private LayerMask playerMask;
     private bool jumpKeyPressed;
-    static public int upForcePlayer = 5;
-    Vector3 V3upForce = new Vector3(0, upForcePlayer, 0);
     private float horizontalInput;
+    private Rigidbody RigidbodyComponent;
+    private int superJumps;
 
     // Start is called before the first frame update
     void Start()
     {
+        RigidbodyComponent = GetComponent<Rigidbody>();
 
     }
 
     // Update is called once per frame
     void Update()
     {
-        
         // -- Jump -- 
         // get button would also work just fine // KeyDown only checking it once
-        if (Input.GetKeyDown(KeyCode.Space)) 
+        if (Input.GetKeyDown(KeyCode.Space))
         {
             jumpKeyPressed = true;
         }
 
-        horizontalInput = Input.GetAxis("horizontal");
+        // -- Left Right --
+        horizontalInput = Input.GetAxis("Horizontal");
     }
 
     // FixedUpdate is called once every physics update
-    void FixedUpdate()
+    private void FixedUpdate()
     {
+        RigidbodyComponent.velocity = new Vector3(horizontalInput, RigidbodyComponent.velocity.y, 0);
+
+        if (Physics.OverlapSphere(GroundCheckTransform.position, 0.01f, playerMask).Length == 0)
+        {
+            return;
+            // exiting fixed because of no air jump
+            // code unrelated has to go above
+        }
+
         if (jumpKeyPressed)
         {
-            GetComponent<Rigidbody>().AddForce(V3upForce, ForceMode.VelocityChange);
+            upForcePlayer = 5;
+            if (superJumps > 0)
+            {
+                upForcePlayer += 3;
+                superJumps --;
+            }
+            RigidbodyComponent.AddForce(Vector3.up * upForcePlayer, ForceMode.VelocityChange);
             jumpKeyPressed = false;
+        }
+    }
+
+    private void OnTriggerEnter(Collider other)
+    {
+        if (other.gameObject.layer == 7)
+        {
+            Destroy(other.gameObject);
+            superJumps ++;
         }
     }
 }
