@@ -8,6 +8,8 @@ public class Bird : MonoBehaviour
     private bool jumpKeyPressed;
     [SerializeField] private int upForcePlayer;
     private Animator mAnimator;
+    private string currentState;
+    private bool isJumping;
 
     // Start is called before the first frame update
     void Start()
@@ -31,10 +33,34 @@ public class Bird : MonoBehaviour
     {
         if (jumpKeyPressed)
         {
-            RigidbodyComponent.AddForce(Vector3.up * upForcePlayer, ForceMode.VelocityChange);
-            mAnimator.SetTrigger("TFlapp");
             jumpKeyPressed = false;
+
+            // Movement
+            RigidbodyComponent.AddForce(Vector3.up * upForcePlayer, ForceMode.VelocityChange);
+
+            // Animation
+            if (!isJumping)
+            {
+                isJumping = true;
+                ChangeAnimationState("BirdFlapp");
+                Invoke("JumpComplete", 0.13f); // mAnimator.GetCurrentAnimatorStateInfo(0).length - 0.3f
+            }
         }
     }
-}
 
+    void JumpComplete()
+    {
+        isJumping = false;
+        ChangeAnimationState("Idle");
+    }
+
+    void ChangeAnimationState(string newState)
+    {
+        //Guard
+        if(currentState == newState) return;
+        
+        mAnimator.Play(newState);
+        
+        currentState = newState;
+    }
+}
