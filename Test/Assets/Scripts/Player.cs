@@ -13,6 +13,8 @@ public class Player : MonoBehaviour
     private float horizontalInput;
     private Rigidbody RigidbodyComponent;
     private int superJumps;
+    private Animator mAnimator;
+
 
     // Start is called before the first frame update
     void Start()
@@ -29,6 +31,8 @@ public class Player : MonoBehaviour
         if (Input.GetKeyDown(KeyCode.Space))
         {
             jumpKeyPressed = true;
+            mAnimator = GetComponent<Animator>();
+
         }
 
         // -- Left Right --
