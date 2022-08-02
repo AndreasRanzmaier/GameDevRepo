@@ -1,0 +1,189 @@
+Using pre-set license
+Built from '2020.3/staging' branch; Version is '2020.3.33f1 (915a7af8b0d5) revision 9525882'; Using compiler version '192528614'; Build Type 'Release'
+OS: 'Windows 10  (10.0.19044) 64bit Professional' Language: 'en' Physical Memory: 32448 MB
+BatchMode: 1, IsHumanControllingUs: 0, StartBugReporterOnCrash: 0, Is64bit: 1, IsPro: 0
+
+COMMAND LINE ARGUMENTS:
+C:\Program Files\Unity\Hub\Editor\2020.3.33f1\Editor\Unity.exe
+-adb2
+-batchMode
+-noUpm
+-name
+AssetImportWorker0
+-projectPath
+C:/_Personal/GameDev/GameDevRepo/Sandbox
+-logFile
+Logs/AssetImportWorker0.log
+-srvPort
+50581
+Successfully changed project path to: C:/_Personal/GameDev/GameDevRepo/Sandbox
+C:/_Personal/GameDev/GameDevRepo/Sandbox
+Using Asset Import Pipeline V2.
+Refreshing native plugins compatible for Editor in 25.36 ms, found 2 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Initialize engine version: 2020.3.33f1 (915a7af8b0d5)
+[Subsystems] Discovering subsystems at path C:/Program Files/Unity/Hub/Editor/2020.3.33f1/Editor/Data/Resources/UnitySubsystems
+[Subsystems] Discovering subsystems at path C:/_Personal/GameDev/GameDevRepo/Sandbox/Assets
+GfxDevice: creating device client; threaded=0
+Direct3D:
+    Version:  Direct3D 11.0 [level 11.1]
+    Renderer: NVIDIA T500 (ID=0x1fbb)
+    Vendor:   
+    VRAM:     3968 MB
+    Driver:   30.0.14.7298
+Initialize mono
+Mono path[0] = 'C:/Program Files/Unity/Hub/Editor/2020.3.33f1/Editor/Data/Managed'
+Mono path[1] = 'C:/Program Files/Unity/Hub/Editor/2020.3.33f1/Editor/Data/MonoBleedingEdge/lib/mono/unityjit'
+Mono config path = 'C:/Program Files/Unity/Hub/Editor/2020.3.33f1/Editor/Data/MonoBleedingEdge/etc'
+Using monoOptions --debugger-agent=transport=dt_socket,embedding=1,server=y,suspend=n,address=127.0.0.1:56536
+Begin MonoManager ReloadAssembly
+Registering precompiled unity dll's ...
+Register platform support module: C:/Program Files/Unity/Hub/Editor/2020.3.33f1/Editor/Data/PlaybackEngines/WebGLSupport/UnityEditor.WebGL.Extensions.dll
+Register platform support module: C:/Program Files/Unity/Hub/Editor/2020.3.33f1/Editor/Data/PlaybackEngines/WindowsStandaloneSupport/UnityEditor.WindowsStandalone.Extensions.dll
+Registered in 0.002112 seconds.
+Native extension for WindowsStandalone target not found
+Native extension for WebGL target not found
+Refreshing native plugins compatible for Editor in 26.93 ms, found 2 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Mono: successfully reloaded assembly
+- Completed reload, in  0.531 seconds
+Domain Reload Profiling:
+	ReloadAssembly (532ms)
+		BeginReloadAssembly (54ms)
+			ExecutionOrderSort (0ms)
+			DisableScriptedObjects (0ms)
+			BackupInstance (0ms)
+			ReleaseScriptingObjects (0ms)
+			CreateAndSetChildDomain (1ms)
+		EndReloadAssembly (410ms)
+			LoadAssemblies (52ms)
+			RebuildTransferFunctionScriptingTraits (0ms)
+			SetupTypeCache (145ms)
+			ReleaseScriptCaches (0ms)
+			RebuildScriptCaches (29ms)
+			SetupLoadedEditorAssemblies (143ms)
+				LogAssemblyErrors (0ms)
+				InitializePlatformSupportModulesInManaged (5ms)
+				SetLoadedEditorAssemblies (0ms)
+				RefreshPlugins (27ms)
+				BeforeProcessingInitializeOnLoad (11ms)
+				ProcessInitializeOnLoadAttributes (77ms)
+				ProcessInitializeOnLoadMethodAttributes (23ms)
+				AfterProcessingInitializeOnLoad (0ms)
+				EditorAssembliesLoaded (0ms)
+			ExecutionOrderSort2 (0ms)
+			AwakeInstancesAfterBackupRestoration (0ms)
+Platform modules already initialized, skipping
+Registering precompiled user dll's ...
+Registered in 0.002177 seconds.
+Begin MonoManager ReloadAssembly
+Symbol file LoadedFromMemory doesn't match image C:\_Personal\GameDev\GameDevRepo\Sandbox\Library\PackageCache\com.unity.collab-proxy@1.15.15\Lib\Editor\PlasticSCM\unityplastic.dll
+Native extension for WindowsStandalone target not found
+Native extension for WebGL target not found
+Refreshing native plugins compatible for Editor in 0.45 ms, found 2 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Mono: successfully reloaded assembly
+- Completed reload, in  0.869 seconds
+Domain Reload Profiling:
+	ReloadAssembly (870ms)
+		BeginReloadAssembly (128ms)
+			ExecutionOrderSort (0ms)
+			DisableScriptedObjects (4ms)
+			BackupInstance (0ms)
+			ReleaseScriptingObjects (0ms)
+			CreateAndSetChildDomain (17ms)
+		EndReloadAssembly (688ms)
+			LoadAssemblies (81ms)
+			RebuildTransferFunctionScriptingTraits (0ms)
+			SetupTypeCache (208ms)
+			ReleaseScriptCaches (0ms)
+			RebuildScriptCaches (45ms)
+			SetupLoadedEditorAssemblies (282ms)
+				LogAssemblyErrors (0ms)
+				InitializePlatformSupportModulesInManaged (5ms)
+				SetLoadedEditorAssemblies (0ms)
+				RefreshPlugins (0ms)
+				BeforeProcessingInitializeOnLoad (76ms)
+				ProcessInitializeOnLoadAttributes (186ms)
+				ProcessInitializeOnLoadMethodAttributes (9ms)
+				AfterProcessingInitializeOnLoad (5ms)
+				EditorAssembliesLoaded (0ms)
+			ExecutionOrderSort2 (0ms)
+			AwakeInstancesAfterBackupRestoration (6ms)
+Platform modules already initialized, skipping
+========================================================================
+Worker process is ready to serve import requests
+Launched and connected shader compiler UnityShaderCompiler.exe after 0.04 seconds
+Refreshing native plugins compatible for Editor in 0.35 ms, found 2 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 1508 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 68.6 MB.
+System memory in use after: 68.7 MB.
+
+Unloading 16 unused Assets to reduce memory usage. Loaded Objects now: 1944.
+Total: 2.124700 ms (FindLiveObjects: 0.105100 ms CreateObjectMapping: 0.034900 ms MarkObjects: 1.923500 ms  DeleteObjects: 0.060300 ms)
+
+AssetImportParameters requested are different than current active one (requested -> active):
+  custom:framework-win-MediaFoundation: 216162199b28c13a410421893ffa2e32 -> 
+  custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
+  custom:container-muxer-webm: aa71ff27fc2769a1b78a27578f13a17b -> 
+  custom:container-demuxer-webm: 4f35f7cbe854078d1ac9338744f61a02 -> 
+  custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
+  custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
+  custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
+  custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+  custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+========================================================================
+Received Import Request.
+  path: Assets
+  artifactKey: Guid(00000000000000001000000000000000) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets using Guid(00000000000000001000000000000000) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '42d402b061de3733987d63b9cc3b64de') in 0.005325 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 4.920601 seconds.
+  path: Assets/Animations
+  artifactKey: Guid(04607b3cb6013924ca4534843dd3b2e2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Animations using Guid(04607b3cb6013924ca4534843dd3b2e2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'e00145b9905b30ebecf38da2951a06bd') in 0.001962 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 5.699275 seconds.
+  path: Assets/Miximo
+  artifactKey: Guid(d00b01de92bcea543ae34a4ef18583de) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Miximo using Guid(d00b01de92bcea543ae34a4ef18583de) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '14e56fbc3c3f67a4043287932cc39550') in 0.002600 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 9.919955 seconds.
+  path: Assets/Mixamo
+  artifactKey: Guid(d00b01de92bcea543ae34a4ef18583de) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Mixamo using Guid(d00b01de92bcea543ae34a4ef18583de) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '52f370f949137f6627670b54d0f80ea3') in 0.001984 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 11.695859 seconds.
+  path: Assets/Mixamo/xbot@Idle.fbx
+  artifactKey: Guid(5867a49d2fce4c94686c82339b2058cc) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Mixamo/xbot@Idle.fbx using Guid(5867a49d2fce4c94686c82339b2058cc) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '5923efa21529f43da373dc15ef3caedb') in 0.187463 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000300 seconds.
+  path: Assets/Mixamo/xbot@Walking.fbx
+  artifactKey: Guid(2ba8282a21df633489224cff6f8266b8) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Mixamo/xbot@Walking.fbx using Guid(2ba8282a21df633489224cff6f8266b8) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'f671f1a492af601651c324bd2a9da6b9') in 0.094938 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000327 seconds.
+  path: Assets/Mixamo/xbot@Running.fbx
+  artifactKey: Guid(f6fb4010341ac804388a699fc178f614) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Mixamo/xbot@Running.fbx using Guid(f6fb4010341ac804388a699fc178f614) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'ad5deff68533f30e565a3444e308e3ed') in 0.082113 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 2284.916054 seconds.
+  path: Assets/Animations/New Animation.anim
+  artifactKey: Guid(e6be87f34e7612a429e5645532f9d376) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Animations/New Animation.anim using Guid(e6be87f34e7612a429e5645532f9d376) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'b493ca1d623b758432b49827e814e05a') in 0.005753 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 14.702980 seconds.
+  path: Assets/Animations/XBotController.controller
+  artifactKey: Guid(85d1fd19e0b65fa459f8cc4fe55c38f1) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Animations/XBotController.controller using Guid(85d1fd19e0b65fa459f8cc4fe55c38f1) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '810446dde14ac21b626b8229f2cdd19b') in 0.027181 seconds 
+AssetImportWorkerClient::OnTransportError - code=2 error=End of file
